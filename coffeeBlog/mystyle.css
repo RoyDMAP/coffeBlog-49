@@ -1,21 +1,61 @@
 /*global*/
+
+/*header*/
+header{ 
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    color: white;
+    height: 200px;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+header.site-contact{ 
+    color:white;
+    background-color: black;
+}
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-bar a{
+    color: white;
+    margin-right: 10px;
+}
 *{
     margin:0;
     padding:0;
 }
 body{
     font-family: arial;
+    text-align: center;
+}
+.horizontal-align{
+    text-align: center;
+    padding: 10px;
 }
 p{
     line-height: 2;
 }
-h1,h2,h3{
-    padding-top:20px;
+h1{
+    padding-top: 20px;
     padding-bottom: 20px;
-    text-align: center;
+}
+h2{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 a{
     text-decoration: none;
+}
+h2{
+    text-align: center; 
 }
 img{
     max-width: 100%;   
@@ -44,25 +84,7 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-/*header*/
-header{ 
-    background-image: url(./img/banner.jpg);
-    background-size: cover;
-    color:white;
-    height: 400px;
-    text-align: center;
-}
 
-.navigation-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.navigation-bar a{
-    color: white;
-    margin-right: 10px;
-}
 .main-content{
     display: flex;
     justify-content: space-around;
@@ -75,14 +97,53 @@ header{
     width: 40%;
 }
 footer{
-    width: 100%;
+    background-image: url(./img/banner2.jpg);
     background-color: black;
     height: 80px;
     color:white; 
-    padding: 10px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
 }
+
+/*Contact*/
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+.img-container{
+    
+}
+.form-container{
+    background-color: white;
+    margin-top: -20px;
+    padding: 10px;
+}
+.input-container{
+    margin-bottom: 10px;
+    padding: 10px;   
+}
+.input-container label{
+    display: inline-block;
+    width: 20%;
+}
+.input-container input,
+.input-container textarea{
+        display: inline-block;
+        width: 70%;
+        padding: 5px;
+        background-color: #dedede;
+        border: none;
+        border-radius: 3px;
+}
+/*Courses*/
+
+
+
+
+
+
+
+
 
 
